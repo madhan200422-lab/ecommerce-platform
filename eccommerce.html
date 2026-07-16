@@ -1,0 +1,47 @@
+<html>
+    <head>
+       <title>My Eccommerce Webside</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="#articles">Article</a>
+            <a href="#gellery">Gellery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+         <main>
+            <h1>Accessblity With ARIA Examle</h1>
+            <p>This page demontrates ARIA roles, properties, and accesiblity best practices.</p>
+
+            <section id="services"  aria-labelledby="formTitle">
+                <h2 id="formTitle">Subscribe Form</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input id="email" type="email" aria-describedby="emailHelp" required>
+                    <br><br>
+                    <button>Submit</button>
+                </form>
+            </section>
+
+            <section id="services" aria-labelledby="cartTitle">
+                <h2 id="cartTitle">Shopping Cart</h2>
+                <button onclick="addTocart()"> Add to cart</button>
+                <div id="status" role="status" aria-live="polite"></div>
+            </section>
+
+            <section id="contact" role="dialog" aria-labelledby="dialogTitle" aria-model="true">
+                <h2 id="dialogTitle">Subscribe to Newsletter</h2>
+                <p>Enter your email to get updates.</p>
+                <input type="emal" aria-label="emailAddressBox" aria-describedby="emailHelp" required>
+                <button aria label="submit">Submit</button>
+                <button aria label="close">Close</button>
+            </section>
+        </main>
+        <script>
+            function addToCart() {
+                document.getElementbyId("status").innerText="item assed to cart";
+            }
+        </script>
+    </body>
+</html>
