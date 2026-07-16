@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>My Blog Pagr</title>
+        <style>
+            header, nav, main,section, article, aside, footer {
+                border: 1px solid black;
+                padding: 15px;
+                margin: 10px;
+            }
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My Webside</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#articles">Articles</a>
+            <a href="#gellery">Gellery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <main>
+            <section id="articles">
+                <h2>Latest articles</h2>
+                <article>
+                    <h3>What is HTML?</h3>
+                    <p>HTML stamds for Hyper Text Markup Language. it is used to create webpages.</p>
+                </article>
+                <article>
+                    <h3>Why Use semantic tags?</h3>
+                    <p>They mprove SEO,accessibility,code easier to read.</p>
+3            </section>
+             <section id="gellery">
+                  <h2>Gellery</h2>
+                  <figure>
+                     <img src="download.jpg" alt="sample image">
+                     <figcaption>HTML5 LOGO</figcaption>
+                  </figure>
+                  <audio controls>
+                    <source src="music mp3" type="audio/mpeg">
+                    your browser does not support the audio element.
+                  </audio>
+                  <video width="320" height="240" controls>
+                  <source src="movie.mp4" type="video/mp4">
+                   your browser does not support the video tag.
+                   </video>
+            </section>
+            <aside>
+                <h3>Related Links</h3>
+                <ul>
+                    <li> <a href="#">Learn CSS</a></li>
+                    <li> <a href="#">Learn JS</a></li>
+                </ul>
+                </aside>
+                <section id="Contact">
+                    <h2>Contact Us</h2>
+                    <form  onsubmit="saveformData()">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" requied>
+                        <br><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" requied>
+                        <br><br>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" requied></textarea>
+                        <br><br>
+                        <button type="summit">Send</button>
+                        <button onclick="clearformData()">Reset</button>
+                    </form>
+                </section>
+            </aside>
+        </main>
+        <footer>
+            <p>&lt;&lt;&lt;&copy;2026 My Website | All Rights Reserved&gt;&gt;&gt;</p>
+        </footer>
+        <script>
+            function saveformData() {
+                let name = document.getElementById("name").value;
+                let email= document.getElementById("email").value;
+
+                localStorage.setItem("name",name);
+                localStorage.setItem("email",email);
+
+            }
+        </script>
+    </body>
+</html>

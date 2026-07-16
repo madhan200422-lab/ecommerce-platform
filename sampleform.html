@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> my sample form</title>
+    </head>
+    <body>
+        <h2>User Registration</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+            <label for="name">User Name</label>
+            <input type="text" name="name">
+            <br><br>
+            <label for="email">User Email</label>
+            <input type="email" name="email">
+            <br><br>
+            <label for="genter">Gender</label>
+            <input type="radio" name="genter" value="Male">Male
+            <input type="radio" name="genter" value="Female">Female
+            <br><br>
+            <label for="age">Age</label>
+            <input type="checkbox" name+="age" value="15-20">15-20
+            <input type="checkbox" name+="age" value="21-29">21-29
+            <input type="checkbox" name+="age" value="30-40">30-40
+            <br><br>
+            <label for="message">Your message</label>
+            <textarea name="message"></textarea>
+            </fieldset>
+             <br>
+            <fieldset>
+                 <legend>Course Details</legend>
+                 <select name="courses" id="courses">
+                     <optgroup label="Web Desgning">
+                     <option value="html">HTML</option>
+                     <option value="css">CSS</option>
+                     <option value="js">JS</option>
+                     <option value="bootstrap">Bootstrap</option>
+                     </optgroup>
+                     <optgroup label="Advance js">
+                     <option value="react js">React JS</option>
+                     <option value="node js">Node JS</option>
+                     <option value="angular js">AngularJS</option>
+                     </optgroup>
+                     <optgroup label="Database">
+                     <option value="sql">SQL DB</option>
+                     <option value="mango db">Mango DB</option>
+                     </optgroup>
+                 </select>
+                 <label for="Devops">select anyone</label>
+                 <input list="Devops" name="devops">
+                 <datalist id="devops">
+                      <option value="Github">
+                      <option value="Azure">
+                      <option value="Docker">
+                      <option value="AWS">
+                 </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Upload Data</legend>
+                <label for="resume">Upload Resume(PDF/DOC)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+                <br><br>
+                <label for="image">Upload profile image(JPG/PNG)</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </fieldset>
+            <br><br>
+            <button type="submit">submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+    </body>
+</html>
