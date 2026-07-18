@@ -1,4 +1,4 @@
-ecommerce-platform
+🛒 E-Commerce Website
 
 🌐 Responsive Web Application 
 
